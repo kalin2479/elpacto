@@ -1,0 +1,5 @@
+require('./bootstrap-vue.js')
+require('./vee-validate.js')
+require('./axios.js')
+// require('./scroll-magic.js')
+// require('./green-sock.js')
