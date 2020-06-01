@@ -8,15 +8,15 @@
                         <b-form @submit.prevent="handleSubmit(onSubmit)" v-if="show">
                             <b-row class="title-form">
                                 <b-col cols="12" lg="6">
-                                    <h3>To get started, tell us more about you</h3>
-                                    <p>Fill out the form below and we'll let you know if The Pact is right for you.</p>
+                                    <h3>Cuéntanos más sobre tu empresa</h3>
+                                    <p>Completa los campos y nos contactaremos contigo para saber si hacemos un pacto</p>
                                 </b-col>
                             </b-row>
                             <b-row>
                                 <b-col cols="12" lg="6">
                                     <ValidationProvider tag="div" vid="nombre" rules="required|min:2" name="Nombre" v-slot="{ errors, validated }" >
                                         <b-form-group
-                                            label="First name"
+                                            label="Nombre"
                                         >
                                             <b-form-input
                                                 v-model="form.name"
@@ -33,7 +33,7 @@
                                 <b-col cols="12" lg="6">
                                     <ValidationProvider tag="div" vid="apellido" rules="required|min:2" name="Apellido" v-slot="{ errors, validated }" >
                                         <b-form-group
-                                            label="Last name"
+                                            label="Apellido"
                                         >
                                             <b-form-input
                                                 v-model="form.surname"
@@ -51,7 +51,7 @@
                                 <b-col cols="12" lg="6">
                                     <ValidationProvider name="email" rules="required|email" v-slot="{ errors, validated}">
                                         <b-form-group
-                                            label="Email address"
+                                            label="Email"
                                         >
                                             <b-form-input
                                                 v-model="form.email"
@@ -67,7 +67,7 @@
                                 <b-col cols="12" lg="6">
                                     <ValidationProvider tag="div" vid="trabajo" rules="required|min:2" name="Trabajo" v-slot="{ errors , validated}" >
                                         <b-form-group
-                                            label="Job title"
+                                            label="Cargo"
                                         >
                                             <b-form-input
                                                 v-model="form.job"
@@ -86,9 +86,9 @@
 
                             <b-row>
                                 <b-col cols="12" lg="6">
-                                    <ValidationProvider tag="div" vid="compañia" rules="required|min:2" name="Compañia" v-slot="{ errors, validated }" >
+                                    <ValidationProvider tag="div" vid="Nombre de tu empresa" rules="required|min:2" name="Nombre de tu empresa" v-slot="{ errors, validated }" >
                                         <b-form-group
-                                            label="Company name"
+                                            label="Nombre de tu empresa"
                                         >
                                             <b-form-input
                                                 v-model="form.company"
@@ -103,7 +103,7 @@
                                 </b-col>
                                 <b-col cols="12" lg="6">
                                     <ValidationProvider tag="div" vid="Tipo de negocios" rules="required" name="Tipo de negocios" v-slot="{ errors, validated }" >
-                                        <b-form-group label="Business type" >
+                                        <b-form-group label="Tipo de Negocio" >
                                             <b-form-select
                                                 v-model="form.select_business"
                                                 :options="business"
@@ -118,8 +118,8 @@
 
                             <b-row>
                                 <b-col cols="12" lg="6">
-                                    <ValidationProvider tag="div" vid="Industria" rules="required" name="Industria" v-slot="{ errors, validated }" >
-                                        <b-form-group label="Industry" >
+                                    <ValidationProvider tag="div" vid="Rubro" rules="required" name="Rubro" v-slot="{ errors, validated }" >
+                                        <b-form-group label="Rubro" >
                                             <b-form-select
                                                 v-model="form.select_industry"
                                                 :options="industries"
@@ -133,8 +133,8 @@
                                 <b-col cols="12" lg="6">
                                     <ValidationProvider tag="div" vid="Estimado" rules="required" name="Estimado" v-slot="{ errors, validated }" >
                                         <b-form-group 
-                                            label="Estimated 3-monyh digital media budget" 
-                                            description=" At this time, the minimum is $75K over three months."
+                                            label="Inversión estimada por 3 meses en medios digitales (Dólares)" 
+                                            description=""
                                         >
                                             <b-form-select
                                                 v-model="form.select_estimated"
@@ -149,9 +149,9 @@
                             </b-row>
                             <b-row>
                                 <b-col cols="12" lg="6">
-                                    <ValidationProvider tag="div" vid="Anual" rules="required" name="Anual" v-slot="{ errors, validated }" >
+                                    <ValidationProvider tag="div" vid="Rentabilidad" rules="required" name="Rentabilidad" v-slot="{ errors, validated }" >
                                         <b-form-group 
-                                            label="Annual revenue"
+                                            label="Rentabilidad Anual Estimada"
                                         >
                                             <b-form-select
                                                 v-model="form.select_annual"
@@ -164,9 +164,9 @@
                                     </ValidationProvider>
                                 </b-col>
                                 <b-col cols="12" lg="6">
-                                    <ValidationProvider tag="div" vid="Brand" rules="required" name="Brand" v-slot="{ errors, validated }" >
+                                    <ValidationProvider tag="div" vid="Presencia de Marca" rules="required" name="Presencia de Marca" v-slot="{ errors, validated }" >
                                         <b-form-group 
-                                            label="Brand Presence"
+                                            label="Presencia de Marca"
                                         >
                                             <b-form-select
                                                 v-model="form.select_brand"
@@ -181,8 +181,8 @@
                             </b-row>
                             <b-row>
                                 <b-col cols="12" lg="6">
-                                    <b-form-group label="Do you have resources for website tagging">
-                                        <b-form-radio v-model="form.option_website" value="Yes">Yes</b-form-radio>
+                                    <b-form-group label="¿Tienes un sitio web?">
+                                        <b-form-radio v-model="form.option_website" value="Yes">Sí</b-form-radio>
                                         <b-form-radio v-model="form.option_website" value="No">No</b-form-radio>
                                     </b-form-group>
                                 </b-col>
@@ -196,14 +196,14 @@
                                             unchecked-value="not_accepted"
                                             :state = "(form.chek_term === 'accepted') ? true : ( ( !validated ) ? null : false) "
                                         > 
-                                        By submitting this form, you agree to receive marketing communications from Epsilon and its affiliated companies, and agree to the processing of your personal data in accordance with our Privacy Policy. You may withdraw your consent at any time by visiting our Preference Center.
+                                        Acepto recibir novedades sobre marketing y comunicaciones de Publicis Groupe Perú y  acepto el procesamiento de mis datos personales de acuerdo con nuestra Política de privacidad. Puede retirar su consentimiento en cualquier momento visitando nuestro Centro de preferencias.
                                         </b-form-checkbox>
                                     </ValidationProvider>
                                 </b-col>
                             </b-row>
                             <b-row class="box-submit">
                                 <b-col>
-                                    <b-button type="submit" variant="danger" size="lg" id="btnSumit">Submit</b-button>
+                                    <b-button type="submit" variant="danger" size="lg" id="btnSumit">Enviar</b-button>
                                 </b-col>
                             </b-row>                        
                         </b-form>
@@ -216,7 +216,7 @@
             <b-row class="box-legal">
                 <b-col cols="12" lg="9">
                     <hr>
-                    <p class="text-legal">This offer is valid only for United States digital advertising campaigns. Not all businesses will qualify. Minimum digital marketing spend applies. All performance metrics must be agreed upon by advertiser and Epsilon. The Pact, Powered by Epsilon guarantee is subject to full terms and conditions in a written contract with Epsilon. For consideration or for more information, please contact us by July 31, 2020.</p>
+                    <p class="text-legal">Esta oferta es válida solo para campañas de publicidad digital en Perú. No todas las empresas calificarán. Se aplica el gasto mínimo de marketing digital. Todas las métricas de rendimiento deben ser acordadas por el anunciante y Publicis Groupe. La garantía del Pacto, Desarrollado por Publicis Groupe Perú está sujetos evaluación y previo consentimiento de ambas partes.</p>
                 </b-col>
             </b-row>
         </b-container>
@@ -247,11 +247,11 @@
                     job: '',
                     chek_term: 'not_accepted'
                 },        
-                business: [{ text: 'Please select an option', value: null }, 'B2C: Product', 'B2C: Service', 'B2B: Product', 'B2B: Service'],
-                industries: [{ text: 'Please select an option', value: null }, 'Financial Services', 'Grocery', 'Health', 'Media & Entertainment'],
-                estimated: [{text: 'Please select an option', value: null}, '$75K - $180K', '$180K - $600K', '$601k +'],
-                annual: [{text: 'Please select an option', value: null}, '< $10M', '$10M - $50M', '$51M - $100M', '$101M - $250M', '$251M - $500M', '$501M - $750M', '$751M - $1B', '$1B +'],
-                brand: [{text: 'Please select an option', value: null}, {text: 'Online (or large share of sales online)', value: 'Online' }, {text: 'Offline (or small online share of sales)', value: 'Offline'}, {text: 'Online and Offline (equal amount of online and offline sales)', value: 'Online and Offline'}],
+                business: [{ text: 'Por favor seleccione una opción', value: null }, 'B2C:Productos', 'B2C:Servicios', 'B2B: Productos', 'B2B: Servicios'],
+                industries: [{ text: 'Por favor seleccione una opción', value: null }, 'Financiero', 'Salud', 'Entretenimiento', 'Consumo Masivo'],
+                estimated: [{text: 'Por favor seleccione una opción', value: null}, 'Menos de 10K USD', 'Entre 10k – 50k USD', 'Entre 50k – 110k USD', 'Más de 110K USD'],
+                annual: [{text: 'Por favor seleccione una opción', value: null}, '< $10M', '$10M - $50M', '$51M - $100M', '$101M - $250M', '$251M - $500M', '$501M - $750M', '$751M - $1B', '$1B +'],
+                brand: [{text: 'Por favor seleccione una opción', value: null}, {text: 'Sólo Digital', value: 'Digital' }, {text: 'Sólo Medios Tradicionales (No Digital)', value: 'No Digital'}, {text: 'Todos los medios (Digitales y Tradicionales)', value: 'Todos los medios'}],
                 show: true
             }
         },

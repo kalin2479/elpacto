@@ -4,22 +4,22 @@
             <b-row>
                 <b-col cols="12" lg="5">
                     <div class="box-info">
-                        <img src="@/assets/logo.svg" alt="">
+                        <img src="@/assets/Logo_Negro.png" alt="El pacto y Publicis Groupe" class="logo">
                         <div class="box-description">
                             <h1>
-                                We guarantee results from your digital marketing—or you don’t pay.   
+                                Garantizamos tus resultados o No Pagas*
                             </h1>
-                            <b-button variant="danger" @click="goContact" size="lg">Get started</b-button>
+                            <b-button variant="danger" @click="goContact" size="lg">Escríbenos</b-button>
                         </div>
                     </div>
                 </b-col>
-                <b-col cols="12" lg="7">
+                <!-- <b-col cols="12" lg="7">
                     <div class="box-video">
                         <video controls class="video" poster="https://www.epsilon.com/hs-fs/hubfs/pact-video-thumbnail.jpg?width=931&amp;height=524&amp;name=pact-video-thumbnail.jpg">
                             <source src="https://www.epsilon.com/hubfs/Pact_60_Final_h264.mp4" type="video/mp4">
                         </video>
                     </div>
-                </b-col>
+                </b-col> -->
             </b-row>
         </b-container>
     </div>
@@ -55,6 +55,8 @@
         @media (min-width: 992px)
             padding-right: 4.75rem
             padding-top: 3rem
+        .logo
+            width: 100%
 
     .box-video
         width: 100%
@@ -64,7 +66,7 @@
             &:focus
                 outline: none
     .banner-full
-        background-image: url('../assets/pact-hero.jpg')
+        background-image: url('../assets/slider1.jpg')
         background-size: cover
         background-position: center top
         padding: 3rem 0 2.5rem
@@ -76,7 +78,8 @@
         h1
             font-family: 'Lato'
             font-weight: 400
-            color: white
+            // color: white
+            color: #000
             font-size: 1.37em
             line-height: 1.25
             margin-bottom: 3rem

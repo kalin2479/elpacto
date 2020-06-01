@@ -3,17 +3,17 @@
         <b-container>
             <b-row>
                 <b-col cols="12" lg="6">
-                    <h3>How it works</h3>
+                    <h3>¿Cómo garantizamos tus resultados?</h3>
                 </b-col>
             </b-row>
             <b-row>
                 <b-col cols="12" lg="6">
-                    <p>With Epsilon's AI-data activation, backed by Publicis’ unrivaled media scale, The Pact harnesses the power of billions of digital signals to deliver high-value audiences, dynamic creative and one-to-one personalization at scale. If you think The Pact may be a good fit for your business, contact us by July 31, 2020.</p>
-                    <b-button variant="danger" size="lg" @click="goContact">Contact us</b-button>
+                    <p>Cruzamos el expertise publicitario de Publicis Groupe con herramientas predictivas y de performance marketing , garantizando el cumplimiento de tus metas. y si no lo logramos, es simple, NO PAGAS*</p>
+                    <b-button variant="danger" size="lg" @click="goContact">Escríbenos</b-button>
                 </b-col>
                 <b-col cols="12" lg="6">
                     <div class="box-image">
-                        <img src="@/assets/epsilon-x-publicis.svg" alt="">
+                        <img src="@/assets/Preixon_publicis.png" alt="">
                     </div>
                 </b-col>
             </b-row>
@@ -40,6 +40,8 @@
         width: 100%
         @media (min-width: 992px)
             width: 90%
+        img
+            width: 100%
     .btn-lg
         padding: 0.5rem 2.5rem
         margin-top: 1rem

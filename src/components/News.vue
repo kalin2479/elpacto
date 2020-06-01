@@ -3,25 +3,25 @@
         <b-container>
             <b-row class="news-top">
                 <b-col cols="12" lg="4">
-                    <h2>This “new normal“ <br>isn‘t normal</h2>
-                    <p>There's been a surge in people working from home and spending more time online, causing an explosion of digital signals. Interpreting these signals, then adapting to stay connected to your customers, is critical.</p>
+                    <!-- <h2>This “new normal“ <br>isn‘t normal</h2> -->
+                    <p>En un momento de tanta incertidumbre, queremos ayudarte a conseguir los resultados que tu negocio necesita. </p>
                 </b-col>
                 <b-col cols="12" lg="4">
-                    <h2>Let's take on <br>uncertainty, together</h2>
-                    <p>That's why we've launched The Pact, Powered by Epsilon. It's a solution designed for midsized businesses, delivering agreed-upon business outcomes today to help you get recovery ready.</p>
+                    <!-- <h2>Let's take on <br>uncertainty, together</h2> -->
+                    <p>Tenemos una solución para ayudarte con el futuro de tu negocio y nosotros corremos con el riesgo</p>
                 </b-col>
                 <b-col cols="12" lg="4">
-                    <h2>It‘s a simple idea with a <br>bold promise</h2>
-                    <p>Here's what The Pact means to you: if you invest digital marketing dollars, we'll drive targeted business outcomes for you. And if we don't, we'll refund 100% of your investment.</p>
+                    <!-- <h2>It‘s a simple idea with a <br>bold promise</h2> -->
+                    <p>Nosotros optimizamos tu inversión asegurando los objetivos de tu negocio: Visitas a tu sitio web, registros o ventas.</p>
                 </b-col>
             </b-row>
             <hr>
-            <b-row class="news-bottom">
+            <!-- <b-row class="news-bottom">
                 <b-col col sm="7">
                     <h3>What businesses will see the most success with The Pact?</h3>
                     <p>The Pact will benefit B2C midsized businesses looking to drive outcomes such as sales, new customer acquisition, registrations, return on advertising spend and other agreed-upon KPIs. For the program to achieve the scale needed to meet these goals, the recommended digital media investment is at least $25,000 per month for a minimum of 3 consecutive months.</p>
                 </b-col>
-            </b-row>
+            </b-row> -->
         </b-container>
     </div>
 </template>

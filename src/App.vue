@@ -7,7 +7,7 @@
       <contact />
       <footer-main />
     </div>
-    <b-button variant="danger" class="btn-contact-fixed" @click="goContact" size="lg">Contact us</b-button>
+    <b-button variant="danger" class="btn-contact-fixed" @click="goContact" size="lg">Escríbenos</b-button>
   </div>
 </template>
 

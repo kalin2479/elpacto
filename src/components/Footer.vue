@@ -5,38 +5,19 @@
                 <b-col cols="12" xl="2">
                     <img src="@/assets/epsilon-logo--white.svg" alt="" class="box-logo-footer">
                 </b-col>
-                <b-col col sm="12" xl="7">
-                    <b-nav pills>
-                        <b-nav-item href="#">Privacy Policy</b-nav-item>
-                        <b-nav-item>Terms & Conditions</b-nav-item>
-                        <b-nav-item>About our Ads</b-nav-item>
-                        <b-nav-item>Site Map</b-nav-item>
-                        <b-nav-item>Contact</b-nav-item>
-                        <b-nav-item>Consumer Information</b-nav-item>
-                        <b-nav-item>Do Not Sell My Personal Information</b-nav-item>
-                    </b-nav>
+                <b-col col sm="12" xl="7" class="text-legal">
+                    <p>©2020 Publicis Group Perú. Todos los derechos reservados. Todos los nombres y logotipos son marcas comerciales o marcas comerciales registradas de sus respectivos propietarios.</p>
                 </b-col>
                 <b-col cols="12" xl="3">
                     <b-nav pills class="box-social">
-                        <b-nav-item href="#">
-                            <img src="@/assets/twitter.svg" alt="">
-                        </b-nav-item>
-                        <b-nav-item>
+                        <b-nav-item href="https://www.linkedin.com/company/publicis-groupe" target="_blanck">
                             <img src="@/assets/linkedin.svg" alt="">
                         </b-nav-item>
-                        <b-nav-item>
+                        <b-nav-item href="https://www.facebook.com/PublicisGroupePeru/" target="_blanck">
                             <img src="@/assets/facebook.svg" alt="">
                         </b-nav-item>
                     </b-nav>
                 </b-col>
-            </b-row>
-            <hr class="line-footer">
-            <b-row class="text-legal">
-                <b-col cols="12" xl="2"></b-col>
-                <b-col cols="12" xl="7">
-                    <p>©2020 Epsilon Data Management, LLC. All rights reserved. All names and logos are trademarks or registered trademarks of their respective owners.</p>
-                </b-col>
-                <b-col cols="12" xl="3"></b-col>
             </b-row>
         </b-container>
     </div>
@@ -62,9 +43,6 @@
             @media (min-width: 1200px)
                 margin-bottom: 0
         .text-legal
-            padding-top: 1rem
-            @media (min-width: 1200px)
-                padding-top: 1.5rem
             p
                 font-size: 0.75em
                 color: white
