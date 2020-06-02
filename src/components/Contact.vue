@@ -23,7 +23,7 @@
                                                 autocomplete="off"
                                                 type="text"
                                                 :state= "((errors.length == 0) && (validated === false)) ? null : ( ( errors.length === 0  ) ? true : false)"
-                                                placeholder="Enter name"
+                                                placeholder="Ingrese su nombre"
                                             ></b-form-input>
                                             <b-form-invalid-feedback>{{ errors[0] }}</b-form-invalid-feedback>
 
@@ -40,7 +40,7 @@
                                                 autocomplete="off"
                                                 type="text"
                                                 :state= "((errors.length == 0) && (validated === false)) ? null : ( ( errors.length === 0  ) ? true : false)"
-                                                placeholder="Enter last name"
+                                                placeholder="Ingrese su apellido"
                                             ></b-form-input>
                                             <b-form-invalid-feedback>{{ errors[0] }}</b-form-invalid-feedback>
                                         </b-form-group>
@@ -58,7 +58,7 @@
                                                 type="email"
                                                 autocomplete="off"
                                                 :state= "((errors.length == 0) && (validated === false)) ? null : ( ( errors.length === 0  ) ? true : false)"
-                                                placeholder="Enter email"
+                                                placeholder="Ingrese su email"
                                             ></b-form-input>
                                             <b-form-invalid-feedback>{{ errors[0] }}</b-form-invalid-feedback>
                                         </b-form-group>
@@ -74,7 +74,7 @@
                                                 type="text"
                                                 autocomplete="off"
                                                 :state= "((errors.length == 0) && (validated === false)) ? null : ( ( errors.length === 0  ) ? true : false)"
-                                                placeholder="Enter Job title"
+                                                placeholder="Ingrese su cargo"
                                             ></b-form-input>
                                             <b-form-invalid-feedback>{{ errors[0] }}</b-form-invalid-feedback>
                                         </b-form-group>
@@ -95,7 +95,7 @@
                                                 type="text"
                                                 autocomplete="off"
                                                 :state= "((errors.length == 0) && (validated === false)) ? null : ( ( errors.length === 0  ) ? true : false)"
-                                                placeholder="Enter Company name"
+                                                placeholder="Ingrese el nombre de tu empresa"
                                             ></b-form-input>
                                             <b-form-invalid-feedback>{{ errors[0] }}</b-form-invalid-feedback>
                                         </b-form-group>

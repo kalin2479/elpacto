@@ -3,7 +3,7 @@
         <b-container>
             <b-row>
                 <b-col cols="12" xl="2">
-                    <img src="@/assets/epsilon-logo--white.svg" alt="" class="box-logo-footer">
+                    <img src="@/assets/logo_footer.png" alt="" class="box-logo-footer">
                 </b-col>
                 <b-col col sm="12" xl="7" class="text-legal">
                     <p>©2020 Publicis Group Perú. Todos los derechos reservados. Todos los nombres y logotipos son marcas comerciales o marcas comerciales registradas de sus respectivos propietarios.</p>

@@ -4,10 +4,11 @@
             <b-row>
                 <b-col cols="12" lg="5">
                     <div class="box-info">
-                        <img src="@/assets/Logo_Negro.png" alt="El pacto y Publicis Groupe" class="logo">
+                        <img src="@/assets/Logo_Blanco.png" alt="El pacto y Publicis Groupe" class="logo">
+                        <img src="@/assets/share.jpg"  style="display: none">
                         <div class="box-description">
                             <h1>
-                                Garantizamos tus resultados o No Pagas*
+                                Garantizamos los resultados de tu inversión en medios y si no los logramos, No Pagas*
                             </h1>
                             <b-button variant="danger" @click="goContact" size="lg">Escríbenos</b-button>
                         </div>
@@ -66,7 +67,7 @@
             &:focus
                 outline: none
     .banner-full
-        background-image: url('../assets/slider1.jpg')
+        background-image: url('../assets/slider3.jpg')
         background-size: cover
         background-position: center top
         padding: 3rem 0 2.5rem
@@ -78,8 +79,7 @@
         h1
             font-family: 'Lato'
             font-weight: 400
-            // color: white
-            color: #000
+            color: white
             font-size: 1.37em
             line-height: 1.25
             margin-bottom: 3rem
